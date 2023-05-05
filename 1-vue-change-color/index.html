@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Change color</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div id="root">
+		<h1 :class="classValue">Io sono un titolo che cambia colore</h1>
+		<button @click="changeColor">Cambia colore</button>
+
+
+		<!-- <h1 :style="'color: ' + colorValue + '; background-color: blue'">Io sono un titolo</h1> -->
+		<!-- <h1 :style="styleValue" class="active">Io sono un titolo</h1> -->
+		<h1 :class="{active: isActive}">Io sono un titolo che cambia colore</h1>
+		<button @click="toggleBackground">Toggle background</button>
+	</div>
+
+
+	<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+	<script src="script.js"></script>
+</body>
+</html>
